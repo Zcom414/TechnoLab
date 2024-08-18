@@ -1,0 +1,53 @@
+.lessons-container2 h1 {
+    font-size: 2.4em;
+    margin-bottom: 2em;
+}
+
+.lessons-listes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300em, 1fr));
+    grid-gap: 2em;
+}
+
+.lesson-item {
+    cursor: pointer;
+    padding: 1.5em;
+    border-bottom: 0.1em solid #ddd;
+    // border-radius: 5em;
+    // background-color: #6A89CC;
+    transition: all 0.3s ease;
+}
+.max-width {
+    max-width: 120em;
+}
+
+.lesson-item:hover {
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
+}
+
+.lesson-item h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.selected-lesson {
+    margin-top: 2em;
+    padding: 2em;
+    border: 0.1em solid #ddd;
+    border-radius: 5em;
+    background-color: #fff;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.selected-lesson h2 {
+    font-size: 2.4em;
+    margin-bottom: 2em;
+}
+
+.selected-lesson p {
+    margin-bottom: 1em;
+}
+
+.selected-lesson p:first-child {
+    margin-top: 0;
+}

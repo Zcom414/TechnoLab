@@ -1,0 +1,236 @@
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", "sans-serif";
+  color: #1e272e;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+h4 {
+  font-size: 0.8rem;
+}
+
+.button-text{
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: "Montserrat", "sans-serif";
+}
+.title {
+  margin-left: 1rem;
+}
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.py-16 {
+  padding-top: 16rem;
+}
+.py-10 {
+  padding-top: 10rem;
+}
+.pb-16 {
+  padding-bottom: 16rem;
+  
+}
+.pb-10 {
+  padding-bottom: 10rem;
+}
+.pb-5 {
+  padding-bottom: 5rem;
+}
+.px-16 {
+  padding-left: 16rem;
+  
+}
+
+//Flex
+.flex {
+  display: flex;
+}
+
+.flex-wr{
+  display: flex;
+  flex-wrap: wrap;
+}
+.w-20 {
+  width: 20rem;
+}
+
+.w-tel{
+  width : 13em
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.align-center {
+  align-items: center;
+}
+
+.just-center{
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.min-h-full {
+  min-height: 100vh;
+}
+.drawer-start {
+  transform: translateX(-100%);
+}
+.h-full {
+  height: 100vh;
+} 
+.z-100 {
+  z-index: 100;
+}
+.drawer-end .drawer-content {
+  transform: translateX(0);
+}
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #1e272e;
+  border-color: #1e272e;
+}
+.badge-accent {
+  color: #fff;
+  background-color: #EB2F06;
+  border-color: #EB2F06;
+}
+.badge-primary {
+  color: #fff;
+  background-color: #1e272e;
+  border-color: #1e272e;
+}
+.badge-secondary {
+  color: #fff;
+  background-color: #1e272e;
+  border-color: #1e272e;
+}
+
+/*ALL - By jules*/
+
+*{
+  font-size: 1.5rem;
+}
+
+/*Width*/
+.w-10{
+  width: 10rem;
+}
+
+/*Justify*/
+
+.justify-center{
+  justify-content: center;
+}
+
+/*Margin*/
+
+//Bottom
+.mbt-demi{ 
+  margin-bottom: 1.5em;
+}
+
+//Top
+.mt-demi{ 
+  margin-top: 1.5em;
+}
+
+.mt-2demi{
+  margin-top: 2.5em;
+}
+
+/*position*/
+.center{
+  text-align: center;
+  justify-content: center;
+}
+
+
+.none{
+  display: none;
+}
+
+/*Padding*/
+.p-top-5em{
+  padding-top: 5em;
+}
+
+.p-b-t-2em{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+//Décorartion
+
+.ls-none{
+  list-style: none;
+}
+
+.td-none{
+  text-decoration: none;
+}
+
+//Space
+.space{
+  gap: 2em;
+}
+
+.spc-btw{
+  justify-content: space-between;
+}
+
+.spc-ard{
+  justify-content: space-around;
+}
+
+//Gap
+.gap{
+  gap: 2em;
+}
+
+//Display
+.block{
+  display: block;
+}

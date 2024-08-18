@@ -1,0 +1,101 @@
+@mixin color-style($bg-color, $border-color: $bg-color, $text-color: #ffffff) {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  color: $text-color;
+}
+
+.color1 {
+  @include color-style(#fad390);
+}
+
+.color2 {
+  @include color-style(#f8c291);
+}
+
+.color3 {
+  @include color-style(#6a89cc);
+}
+
+.color4 {
+  @include color-style(#82ccdd);
+}
+
+.color5 {
+  @include color-style(#b8e994);
+}
+
+.color6 {
+  @include color-style(#f6b93b);
+}
+
+.color7 {
+  @include color-style(#e55039);
+}
+
+.color8 {
+  @include color-style(#4a69bd);
+}
+
+.color9 {
+  @include color-style(#60a3bc);
+}
+
+.color10 {
+  @include color-style(#78e08f);
+}
+
+.color11 {
+  @include color-style(#fa983a);
+}
+
+.color12 {
+  @include color-style(#eb2f06);
+}
+
+.color13 {
+  @include color-style(#1e3799);
+}
+
+.color14 {
+  @include color-style(#3c6382);
+}
+
+.color15 {
+  @include color-style(#38ada9);
+}
+
+.color16 {
+  @include color-style(#e58e26);
+}
+
+.color17 {
+  @include color-style(#e55039);
+}
+
+.color18 {
+  @include color-style(#0c2461);
+}
+
+.color19 {
+  @include color-style(#0a3d62);
+}
+
+.color20 {
+  @include color-style(#079992);
+}
+
+.color21 {
+  @include color-style(#ffffff, #ffffff, #1e272e);
+}
+
+.color22 {
+  @include color-style(#dfe4ea);
+}
+
+.color23 {
+  @include color-style(#a4b0be);
+}
+
+.color25 {
+  @include color-style(#1e272e);
+}

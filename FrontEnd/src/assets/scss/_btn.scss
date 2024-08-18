@@ -1,0 +1,62 @@
+//Button
+
+.del-btn{
+    width: 9em;
+    display: block;
+    background-color : #e55039;
+    border: 1px solid #e55039;
+    border-radius: 1.25rem;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Josefin Sans", "sans-serif";
+    color: #fdfefe;
+    padding: 0.5em 1.6em;
+  }
+
+  .del-btn :hover{
+    color:#e55039;
+    background-color: #fdfefe;
+  }
+
+.valid-btn{
+    width: 9em;
+    display: block;
+    background-color : #78e08f;
+    border: 1px solid #78e08f;
+    border-radius: 1.25rem;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Josefin Sans", "sans-serif";
+    color: #fdfefe;
+    padding: 0.5em 1.6em;
+}
+
+.base-btn{
+    width: 9em;
+    border: 1px solid #1e272e;
+    border-radius: 1.25rem;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Josefin Sans", "sans-serif";
+    color: #1e272e;
+    padding: 0.5em 1.6em;
+}
+
+.yellow-btn{
+  width: 9em;
+    display: block;
+    background-color : #f6b93b;
+    border: 1px solid #f6b93b;
+    border-radius: 1.25rem;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Josefin Sans", "sans-serif";
+    color: #1e272e;
+    padding: 0.5em 1.6em;
+}
+
+/*Lessons*/

@@ -1,0 +1,49 @@
+/* Version mobile */
+.lessons-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.lesson-list {
+  padding: 2em;
+  text-align: center;
+}
+
+.lesson-list img {
+  width: 50%; /* Pour une largeur de 100% sur les mobiles */
+}
+
+.definition {
+  max-width: 120em;
+  margin: 0 auto;
+  margin-left: 0.5em
+}
+
+.lesson-list h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: #1e272e;
+}
+
+.lesson-list p {
+  margin: 0.5em 0;
+  color: #1e272e;
+}
+
+/* Version tablette */
+@media (min-width: 768px) {
+  .lessons-container {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablette */
+  }
+}
+
+/* Version desktop */
+@media (min-width: 1024px) {
+  .lessons-container {
+    grid-template-columns: repeat(4, 1fr); /* Quatre colonnes sur desktop */
+  }
+}

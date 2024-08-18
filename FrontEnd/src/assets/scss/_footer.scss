@@ -1,0 +1,42 @@
+.footer {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); // Une colonne pour les appareils mobiles par défaut
+  align-items: center;
+  gap: 20px; // Espacement entre les éléments
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link, .footer-bottom {
+  text-decoration: none;
+  color: #1e272e;
+}
+
+.footer-small-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr); // Deux colonnes pour les tablettes et appareils plus larges
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr); // Trois colonnes pour les écrans desktop
+  }
+}

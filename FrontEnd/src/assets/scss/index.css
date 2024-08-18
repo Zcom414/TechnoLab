@@ -1,0 +1,1070 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Josefin Sans Italique";
+  src: url("../../fonts/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat Italique";
+  src: url("../../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", "sans-serif";
+  color: #1e272e;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+.button-text {
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: "Montserrat", "sans-serif";
+}
+
+.title {
+  margin-left: 1rem;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.py-16 {
+  padding-top: 16rem;
+}
+
+.py-10 {
+  padding-top: 10rem;
+}
+
+.pb-16 {
+  padding-bottom: 16rem;
+}
+
+.pb-10 {
+  padding-bottom: 10rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.px-16 {
+  padding-left: 16rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-20 {
+  width: 20rem;
+}
+
+.w-tel {
+  width: 13em;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.just-center {
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.min-h-full {
+  min-height: 100vh;
+}
+
+.drawer-start {
+  transform: translateX(-100%);
+}
+
+.h-full {
+  height: 100vh;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.drawer-end .drawer-content {
+  transform: translateX(0);
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #1e272e;
+  border-color: #1e272e;
+}
+
+.badge-accent {
+  color: #fff;
+  background-color: #EB2F06;
+  border-color: #EB2F06;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #1e272e;
+  border-color: #1e272e;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #1e272e;
+  border-color: #1e272e;
+}
+
+/*ALL - By jules*/
+* {
+  font-size: 1.5rem;
+}
+
+/*Width*/
+.w-10 {
+  width: 10rem;
+}
+
+/*Justify*/
+.justify-center {
+  justify-content: center;
+}
+
+/*Margin*/
+.mbt-demi {
+  margin-bottom: 1.5em;
+}
+
+.mt-demi {
+  margin-top: 1.5em;
+}
+
+.mt-2demi {
+  margin-top: 2.5em;
+}
+
+/*position*/
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.none {
+  display: none;
+}
+
+/*Padding*/
+.p-top-5em {
+  padding-top: 5em;
+}
+
+.p-b-t-2em {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.ls-none {
+  list-style: none;
+}
+
+.td-none {
+  text-decoration: none;
+}
+
+.space {
+  gap: 2em;
+}
+
+.spc-btw {
+  justify-content: space-between;
+}
+
+.spc-ard {
+  justify-content: space-around;
+}
+
+.gap {
+  gap: 2em;
+}
+
+.block {
+  display: block;
+}
+
+.main-nav-outer {
+  z-index: 1000;
+  padding: 0;
+  border-bottom: 0.1em solid #a4b0be;
+  box-shadow: 0 0.4em 0.5em -0.3em #dfe4ea;
+  position: relative;
+  background: #ffffff;
+}
+
+.main-nav {
+  display: none;
+  text-align: center;
+  margin: 1em 0 2em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  display: block;
+  margin: 0;
+}
+
+.main-nav li a {
+  display: block;
+  color: #1e272e;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  line-height: 2rem;
+  margin: 1.8rem 3.25rem;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  font-size: 1.6rem;
+  padding: 0.5em;
+}
+
+.main-nav li a:hover {
+  outline: 0 !important;
+  color: #0a3d62;
+  text-decoration: underline;
+  transform: translateY(-0.5em);
+}
+
+.logo {
+  width: 6em;
+}
+
+.small-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*By Jules*/
+/*Menu burger by Jules*/
+#icons {
+  font-size: 2em;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#icons::before {
+  content: "☰";
+  color: #4a69bd;
+}
+
+.active #icons::before {
+  content: "⤫";
+  color: #4a69bd;
+}
+
+.main-nav {
+  animation: normal 0.2s;
+}
+
+#nav.active {
+  display: block;
+}
+
+#icons::after {
+  content: "";
+}
+
+/* Styles pour la version desktop (media query) */
+@media (min-width: 768px) {
+  #icons {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: flex-end; /* Aligner les éléments en bas */
+  }
+  .main-nav-outer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0px;
+    border-bottom: 1px solid #a4b0be;
+    box-shadow: 0 4px 5px -3px #dfe4ea;
+    position: relative;
+    background: #ffffff;
+  }
+  .main-nav li {
+    display: inline;
+    margin: 0 0.01em;
+  }
+  .logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 10rem; /* Augmenter la taille du logo pour les appareils de bureau */
+  }
+  .main-nav li a {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 1.6em; /* Augmenter la taille de la police pour les appareils de bureau */
+  }
+  .small-logo {
+    justify-content: center;
+    right: 45%;
+  }
+}
+.color1 {
+  background-color: #fad390;
+  border: 1px solid #fad390;
+  color: #ffffff;
+}
+
+.color2 {
+  background-color: #f8c291;
+  border: 1px solid #f8c291;
+  color: #ffffff;
+}
+
+.color3 {
+  background-color: #6a89cc;
+  border: 1px solid #6a89cc;
+  color: #ffffff;
+}
+
+.color4 {
+  background-color: #82ccdd;
+  border: 1px solid #82ccdd;
+  color: #ffffff;
+}
+
+.color5 {
+  background-color: #b8e994;
+  border: 1px solid #b8e994;
+  color: #ffffff;
+}
+
+.color6 {
+  background-color: #f6b93b;
+  border: 1px solid #f6b93b;
+  color: #ffffff;
+}
+
+.color7 {
+  background-color: #e55039;
+  border: 1px solid #e55039;
+  color: #ffffff;
+}
+
+.color8 {
+  background-color: #4a69bd;
+  border: 1px solid #4a69bd;
+  color: #ffffff;
+}
+
+.color9 {
+  background-color: #60a3bc;
+  border: 1px solid #60a3bc;
+  color: #ffffff;
+}
+
+.color10 {
+  background-color: #78e08f;
+  border: 1px solid #78e08f;
+  color: #ffffff;
+}
+
+.color11 {
+  background-color: #fa983a;
+  border: 1px solid #fa983a;
+  color: #ffffff;
+}
+
+.color12 {
+  background-color: #eb2f06;
+  border: 1px solid #eb2f06;
+  color: #ffffff;
+}
+
+.color13 {
+  background-color: #1e3799;
+  border: 1px solid #1e3799;
+  color: #ffffff;
+}
+
+.color14 {
+  background-color: #3c6382;
+  border: 1px solid #3c6382;
+  color: #ffffff;
+}
+
+.color15 {
+  background-color: #38ada9;
+  border: 1px solid #38ada9;
+  color: #ffffff;
+}
+
+.color16 {
+  background-color: #e58e26;
+  border: 1px solid #e58e26;
+  color: #ffffff;
+}
+
+.color17 {
+  background-color: #e55039;
+  border: 1px solid #e55039;
+  color: #ffffff;
+}
+
+.color18 {
+  background-color: #0c2461;
+  border: 1px solid #0c2461;
+  color: #ffffff;
+}
+
+.color19 {
+  background-color: #0a3d62;
+  border: 1px solid #0a3d62;
+  color: #ffffff;
+}
+
+.color20 {
+  background-color: #079992;
+  border: 1px solid #079992;
+  color: #ffffff;
+}
+
+.color21 {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  color: #1e272e;
+}
+
+.color22 {
+  background-color: #dfe4ea;
+  border: 1px solid #dfe4ea;
+  color: #ffffff;
+}
+
+.color23 {
+  background-color: #a4b0be;
+  border: 1px solid #a4b0be;
+  color: #ffffff;
+}
+
+.color25 {
+  background-color: #1e272e;
+  border: 1px solid #1e272e;
+  color: #ffffff;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form {
+  margin: 0 auto;
+  width: 90%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#messagesErrors,
+#messageValidation {
+  display: flex;
+  width: 94%;
+  margin-bottom: 1rem;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+#messagesErrors.error,
+#messageValidation.error {
+  border: 2px solid #eb2f06;
+  background-color: #eb2f06;
+}
+#messagesErrors.success,
+#messageValidation.success {
+  border: 2px solid #27ae60;
+  background-color: #2ecc71;
+}
+
+.imgErrorAndValid {
+  width: 3em;
+  margin-right: 1em;
+}
+
+.form2 {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.form__input {
+  width: 90%;
+  border: 2px solid #3c6382;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: black;
+  padding: 1.25rem;
+  background: none;
+  transition: all 160ms ease-in;
+}
+.form__input:hover, .form__input:focus {
+  border-color: #0a3d62;
+}
+.form__input:not(:placeholder-shown) + .form__label, .form__input:focus + .form__label {
+  top: 0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+legend {
+  margin-bottom: 1rem;
+}
+
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem;
+  color: #0a3d62;
+  cursor: text;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in, background-color 200ms ease-in;
+  background-color: white;
+}
+.form__label.active {
+  top: 1rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.confirm {
+  background-color: #38ada9;
+  border: 1px solid #38ada9;
+}
+
+.confirm:hover {
+  color: #38ada9;
+  background-color: #ffffff;
+  border: 1px solid #38ada9;
+}
+
+.cancel {
+  background-color: #f6b93b;
+  border: 1px solid #f6b93b;
+}
+
+.cancel:hover {
+  color: #f6b93b;
+  background-color: #ffffff;
+  border: 1px solid #f6b93b;
+}
+
+.btn {
+  font-family: "Josefin Sans", sans-serif;
+  color: #fdfefe;
+  padding: 8px 16px;
+  border-radius: 0.575rem;
+  font-size: 22px;
+  width: 10rem;
+  margin: 10px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.margin-right {
+  margin-right: 1rem;
+}
+
+/*By Jules*/
+/*Dashboard FORM dekstop*/
+@media (min-width: 768px) {
+  .w-descrip {
+    width: 50em;
+  }
+}
+.languages a {
+  margin: 10px 0 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1e272e;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  background: #dfe4ea;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.languages a:hover {
+  color: #dfe4ea;
+  background-color: #1e272e;
+  text-decoration: underline;
+  transform: translateY(-5px);
+  border-radius: 5px 10px 5px 10px;
+}
+
+.languages .active {
+  color: #dfe4ea;
+  background-color: #1e272e;
+  text-decoration: underline;
+  border-radius: 5px 10px 5px 10px;
+}
+
+.selected-technologie {
+  margin-top: 3.5em;
+  text-align: center;
+}
+
+/* Media query pour les écrans de taille supérieure à 768px (version desktop) */
+@media screen and (min-width: 768px) {
+  .languages a {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .section-block {
+    margin: 12rem 1em 0 1em;
+  }
+  .selected-technologie {
+    margin-top: 3.5em;
+    text-align: start;
+  }
+}
+.section-block {
+  padding: 2em;
+}
+
+.section-arduino {
+  display: flex;
+  flex-direction: column;
+}
+
+.left,
+.right {
+  width: 100%;
+}
+
+.left img {
+  width: 100%;
+}
+
+.right {
+  margin-top: 2em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.right p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+h1 {
+  color: #1E3799;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .section-arduino {
+    flex-direction: row;
+    gap: 2em;
+  }
+  .left,
+  .right {
+    width: 50%;
+  }
+  .right {
+    margin-top: 0;
+  }
+}
+.footer {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link, .footer-bottom {
+  text-decoration: none;
+  color: #1e272e;
+}
+
+.footer-small-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Version mobile */
+.lessons-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.lesson-list {
+  padding: 2em;
+  text-align: center;
+}
+
+.lesson-list img {
+  width: 50%; /* Pour une largeur de 100% sur les mobiles */
+}
+
+.definition {
+  max-width: 120em;
+  margin: 0 auto;
+  margin-left: 0.5em;
+}
+
+.lesson-list h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: #1e272e;
+}
+
+.lesson-list p {
+  margin: 0.5em 0;
+  color: #1e272e;
+}
+
+/* Version tablette */
+@media (min-width: 768px) {
+  .lessons-container {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur tablette */
+  }
+}
+/* Version desktop */
+@media (min-width: 1024px) {
+  .lessons-container {
+    grid-template-columns: repeat(4, 1fr); /* Quatre colonnes sur desktop */
+  }
+}
+.dashboard-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.drawer-side-2 {
+  background-color: rgba(96, 163, 188, 0);
+  overflow-y: auto; /* Permet le scrolling si nécessaire */
+  border-right: 1px solid #ccc;
+  display: block; /* Masqué par défaut */
+  transition: transform 0.3s ease-in-out;
+}
+
+.drawer-content-2 {
+  flex-grow: 1;
+  padding: 2em;
+}
+
+.menu-drawer-2 {
+  list-style: none;
+  padding: 2em;
+}
+
+.menu-drawer-2 li a {
+  font-size: 1em;
+  display: block;
+  margin-bottom: 1rem;
+  color: #333;
+  text-decoration: none;
+  border-radius: 0.05em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-drawer-2 li a:hover {
+  background-color: #ccc;
+}
+
+/*By Jules*/
+.content-fsize {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.back-blue {
+  background-color: #4a69bd;
+  border-radius: 2em;
+}
+
+#outlet::before {
+  display: none;
+}
+
+.width-logo {
+  width: 10em;
+}
+
+.margin-logo {
+  margin: 0;
+}
+
+.container {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.admin {
+  font-size: 1em;
+}
+
+.item {
+  list-style: none;
+  border-style: solid;
+  box-sizing: content-box;
+  border-radius: 2em;
+  border-color: #ffffff;
+  align-items: center;
+}
+
+.item p {
+  color: #1e272e;
+}
+
+/*****************************************************************/
+/*Section burger*/
+/*****************************************************************/
+#dash::before {
+  display: block;
+}
+
+.burgerSelect {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 1.25em;
+  padding-top: 1.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#content {
+  display: none;
+}
+
+#content.active {
+  display: block;
+}
+
+/**************************************************************************/
+/*Responsive version*/
+/**************************************************************************/
+@media (min-width: 768px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+  }
+  .dashboard-fsize {
+    font-size: 3em;
+  }
+  .content-fsize {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+.del-btn {
+  width: 9em;
+  display: block;
+  background-color: #e55039;
+  border: 1px solid #e55039;
+  border-radius: 1.25rem;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Josefin Sans", "sans-serif";
+  color: #fdfefe;
+  padding: 0.5em 1.6em;
+}
+
+.del-btn :hover {
+  color: #e55039;
+  background-color: #fdfefe;
+}
+
+.valid-btn {
+  width: 9em;
+  display: block;
+  background-color: #78e08f;
+  border: 1px solid #78e08f;
+  border-radius: 1.25rem;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Josefin Sans", "sans-serif";
+  color: #fdfefe;
+  padding: 0.5em 1.6em;
+}
+
+.base-btn {
+  width: 9em;
+  border: 1px solid #1e272e;
+  border-radius: 1.25rem;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Josefin Sans", "sans-serif";
+  color: #1e272e;
+  padding: 0.5em 1.6em;
+}
+
+.yellow-btn {
+  width: 9em;
+  display: block;
+  background-color: #f6b93b;
+  border: 1px solid #f6b93b;
+  border-radius: 1.25rem;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Josefin Sans", "sans-serif";
+  color: #1e272e;
+  padding: 0.5em 1.6em;
+}
+
+/*Lessons*/
+.email-message {
+  font-size: 2em;
+}/*# sourceMappingURL=index.css.map */

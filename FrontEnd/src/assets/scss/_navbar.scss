@@ -1,0 +1,143 @@
+
+.main-nav-outer {
+  z-index: 1000;
+  padding: 0;
+  border-bottom: 0.1em solid #a4b0be;
+  box-shadow: 0 0.4em 0.5em -0.3em #dfe4ea;
+  position: relative;
+  background: #ffffff;
+}
+
+.main-nav {
+  display: none;
+  text-align: center;
+  margin: 1em 0 2em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  display: block;
+  margin: 0;
+}
+
+.main-nav li a {
+  display: block;
+  color: #1e272e;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  line-height: 2rem;
+  margin: 1.8rem 3.25rem;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  font-size: 1.6rem;
+  padding: 0.5em;
+}
+
+.main-nav li a:hover {
+  outline: 0 !important;
+  color: #0a3d62;
+  text-decoration: underline;
+  transform: translateY(-0.5em);
+}
+
+.logo {
+  width: 6em;
+}
+
+.small-logo{
+  display: flex;
+  justify-content: space-between;
+}
+/*By Jules*/
+
+
+
+/*Menu burger by Jules*/
+#icons {
+  font-size: 2em;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding-bottom: 1rem; 
+  padding-top: 1rem;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#icons::before {
+  content: "\2630"; 
+  color: #4a69bd;
+}
+
+.active #icons::before{
+  content: "\292B";
+  color: #4a69bd;
+}
+
+.main-nav{
+  animation: normal 0.2s;
+}
+
+#nav.active{
+  display: block;
+}
+
+#icons::after{
+  content: "";
+}
+
+
+
+
+/* Styles pour la version desktop (media query) */
+@media (min-width: 768px) {
+  #icons{
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: flex-end; /* Aligner les éléments en bas */
+  }
+  
+  .main-nav-outer {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0px;
+    border-bottom: 1px solid #a4b0be;
+    box-shadow: 0 4px 5px -3px #dfe4ea;
+    position: relative;
+    background: #ffffff;
+  }
+
+  .main-nav li {
+    display: inline;
+    margin: 0 0.01em;
+  }
+
+  .logo {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 10rem; /* Augmenter la taille du logo pour les appareils de bureau */
+  }
+
+  .main-nav li a {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 1.6em; /* Augmenter la taille de la police pour les appareils de bureau */
+  }
+
+  .small-logo{
+    justify-content: center;
+    right: 45%;
+  }
+  
+}

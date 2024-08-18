@@ -1,0 +1,55 @@
+.dashboard {
+    max-width: 100%; /* Utilise la largeur totale sur les appareils mobiles */
+    margin: 1rem; /* Une marge uniforme pour les petits écrans */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-item {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.button {
+    display: block; /* Assurez-vous que les boutons s'étendent sur toute la largeur sur mobile */
+    width: 100%; /* Utilise la largeur complète pour les boutons */
+    margin-top: 10px; /* Ajoute de l'espace entre les boutons */
+    margin-left: 0; /* Supprime la marge gauche pour les boutons sur mobile */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    outline: none;
+    text-align: center; /* Centre le texte dans le bouton */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries pour les tablettes et les ordinateurs de bureau */
+@media (min-width: 768px) {
+    .dashboard {
+        max-width: 1000px; /* Largeur maximale pour les tablettes et les ordinateurs */
+        margin: 3rem auto; /* Centre le dashboard et ajoute une marge en haut */
+    }
+
+    .button {
+        display: inline-block; /* Revert to inline-block for larger screens */
+        width: auto; /* Revert to auto width for buttons */
+        margin-left: 10px; /* Restaure la marge à gauche pour les boutons */
+        padding: 5px 10px;
+    }
+}

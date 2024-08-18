@@ -1,0 +1,129 @@
+.dashboard-layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.drawer-side-2 {
+  background-color: #60a3bc00;
+  overflow-y: auto; /* Permet le scrolling si nécessaire */
+  border-right: 1px solid #ccc;
+  display: block; /* Masqué par défaut */
+  transition: transform 0.3s ease-in-out;
+}
+
+.drawer-content-2 {
+  flex-grow: 1;
+  padding: 2em;
+}
+
+.menu-drawer-2 {
+  list-style: none;
+  padding: 2em;
+}
+
+.menu-drawer-2 li a{
+  font-size: 1em;
+    display: block;
+    margin-bottom: 1rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 0.05em;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.menu-drawer-2 li a:hover{
+  background-color: #ccc;
+}
+
+/*By Jules*/
+.content-fsize{
+  text-decoration: none;
+  color: #ffffff;
+}
+.back-blue{
+  background-color: #4a69bd;
+  border-radius: 2em;
+}
+
+#outlet::before{
+  display: none;
+}
+
+.width-logo{
+  width: 10em
+}
+
+.margin-logo{
+  margin: 0;
+}
+
+.container{
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.admin{
+  font-size: 1em;
+}
+
+
+.item {
+  list-style: none;
+  border-style:solid;
+  box-sizing: content-box;
+  border-radius: 2em;
+  border-color: #ffffff;
+  align-items: center;
+}
+
+.item p{
+  color:  #1e272e
+}
+
+
+/*****************************************************************/
+                          /*Section burger*/
+/*****************************************************************/
+
+#dash::before{
+  display: block;
+}
+
+.burgerSelect{
+  cursor: pointer;
+  display: block;
+  padding-bottom: 1.25em; 
+  padding-top: 1.25em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#content{
+  display: none;
+}
+
+#content.active{
+  display: block;
+}
+
+/**************************************************************************/
+                          /*Responsive version*/
+/**************************************************************************/
+
+@media (min-width: 768px) {
+  .profile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard-fsize{
+    font-size: 3em;
+  }
+
+  .content-fsize{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
